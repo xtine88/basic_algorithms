@@ -1,12 +1,9 @@
 // FACTORALIZE A NUMBER 28Oct17
 function factorialize(num) {
-  var x = 1;
-  for(var i = num; i > 0; i--) {
-    x *= i;
-
+  if(num === 0){
+    return 1;
   }
-  console.log(x);
+  return num*factorialize(num-1);
 }
 
 factorialize(5);
-
